@@ -7,9 +7,18 @@ public class PrimitiveTypes {
     // all the Java methods and variables are named in camelCase
     public static void main(String[] args) {
         int today = 3; // data-type variable-name = value
-        Integer todayAsClass = 3;
+        today = 6;
+
+                                                                               // new = creating an object
+        Integer todayAsClass = new Integer(3); // data-type variable-name = new data-type
+        Integer todayAsClassAsValue = 3;
+
+        int month = 1; // default value: 0
+        System.out.println(month);
+        Integer monthAsClass; // default value: null (not initialized)
 
         System.out.println("Today is " + todayAsClass);
+        today = 25;
     }
 }
 

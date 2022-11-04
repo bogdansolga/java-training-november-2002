@@ -1,4 +1,4 @@
-package com.training.d01.model;
+package com.training.model;
 
 public class Product {
     // properties / fields

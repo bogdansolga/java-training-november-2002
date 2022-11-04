@@ -15,7 +15,7 @@ public class ControlStructures {
 
         // Ctrl + Alt + M --> Extract method
         // Shift + F6 --> Rename method
-        methodWithAReturnTypeRenamed();
+        // methodWithAReturnTypeRenamed();
 
         saveProductInDatabase(); //() --> calling/invoking a method without parameters
         saveProductInDatabase("something");     //invoking a method with a parameter

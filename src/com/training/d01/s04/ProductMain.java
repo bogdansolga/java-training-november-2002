@@ -1,6 +1,6 @@
 package com.training.d01.s04;
 
-import com.training.d01.model.Product;
+import com.training.model.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,25 +8,28 @@ import java.util.List;
 public class ProductMain {
 
     public static void main(String[] args) {
-        Product first = createProduct(20, "Phone");
-        System.out.println("The first product is a " + first.getName());
+        Product telefon = createProduct(20, "Telefon");
+        System.out.println("The first product is a " + telefon.getName());
 
-        Product second = createProduct(10, "Ice cream :-)");
-        System.out.println("The second product is an '" + second.getName() + "'");
+        Product înghețată = createProduct(10, "Înghețată");
+        System.out.println("The second product is an '" + înghețată.getName() + "'");
 
         // an array of products
-        Product[] products = {first, second};
+        Product[] products = {telefon, înghețată};  // fixed size
 
         // a collection of products
-        List<Product> productList = new ArrayList<>();
-        productList.add(first);
-        productList.add(second);
+        List<Product> productList = new ArrayList<>(1); // dynamic size
+        productList.add(telefon);
+        productList.add(înghețată);
+
+        Product x = null; // a variable of type Product, not initialized (there is no 'new Product()')
+        System.out.println(x.getName());
     }
 
     private static Product createProduct(int id, String name) { // Shift + F6 --> Rename
-        Product product = new Product();
-        product.setId(id);
-        product.setName(name);
-        return product;
+        Product theProduct = new Product();
+        theProduct.setId(id);
+        theProduct.setName(name);
+        return theProduct;
     }
 }
