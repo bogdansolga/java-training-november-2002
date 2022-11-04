@@ -8,7 +8,7 @@ public class Product {
 
     private static final String TABLE_NAME = "Product";
 
-    private static final List<String> STRINGS; // blank final variable
+    protected static final List<String> STRINGS; // blank final variable
 
     static {
         System.out.println("Initializing the class...");
@@ -35,5 +35,9 @@ public class Product {
 
     public static Product createProduct(int id, String name) {
         return new Product(id, name);
+    }
+
+    public void process() {
+        System.out.println("Processing the product '" + name + "'...");
     }
 }
