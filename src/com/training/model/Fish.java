@@ -28,6 +28,11 @@ public class Fish {
         return Objects.equals(name, fish.name);
     }
 
+    /**
+     * Generates the hashCode of the current class
+     *
+     * @return an int value with the generated hash
+     */
     @Override
     public int hashCode() {
         return Objects.hash(name);

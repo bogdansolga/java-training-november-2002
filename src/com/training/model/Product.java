@@ -6,7 +6,7 @@ import java.util.List;
 public class Product {
     // properties / fields
 
-    private static final String TABLE_NAME = "Product";
+    public static final String TABLE_NAME = "Product";
 
     protected static final List<String> STRINGS; // blank final variable
 
