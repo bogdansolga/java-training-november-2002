@@ -1,0 +1,12 @@
+Abstract classes - modelling an abstract object / concept, from the real world. Examples:
+- fruit
+- electronic product
+- money
+- ticket
+- car
+
+The reasons:
+- defining common behavior / properties for all the extending classes
+- having an hierarchy for them --> being able to treat them generically
+- treating objects from the implementing classes uniformly
+- having a simple way to enforce the implementation of functionalities from the parent (abstract) class
