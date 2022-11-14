@@ -19,6 +19,7 @@ public class Laptop extends Product {
         System.out.println("Starting the '" + serialNumber + "' laptop...");
     }
 
+    @Override
     public void process() {
         System.out.println("Processing the laptop '" + getName() + "'...");
         super.process(); // invoking the 'process()' method from the parent class

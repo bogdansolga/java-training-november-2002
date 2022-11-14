@@ -31,6 +31,7 @@ public class FruitsMain {
         }
 
         AbstractFruitSource fruitSource = new BasketFruitSource();
+        @SuppressWarnings("unused") // will disable the IDE and compiler 'not used' warning
         AbstractFruit abstractFruit = fruitSource.getFruitByName("banana");
     }
 }

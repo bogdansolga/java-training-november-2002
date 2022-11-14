@@ -11,4 +11,10 @@ public abstract class AbstractFruit {
     public void displayColor() {
         // non-abstract method
     }
+
+    // ... = variable arguments --> the method can be invoked with any number of arguments (0 -> n)
+    // must be the last argument from the methods list
+    public void variableArgumentsSample(String... arguments) {
+
+    }
 }
