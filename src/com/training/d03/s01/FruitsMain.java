@@ -1,5 +1,7 @@
 package com.training.d03.s01;
 
+import com.training.d03.s01.intf.AbstractFruitSource;
+import com.training.d03.s01.intf.BasketFruitSource;
 import com.training.d03.s01.model.AbstractFruit;
 import com.training.d03.s01.model.Apple;
 import com.training.d03.s01.model.Banana;
@@ -27,5 +29,8 @@ public class FruitsMain {
             System.out.println("Can make juice from a " + abstractFruit.getName() + ": " +
                     abstractFruit.canMakeJuiceFromIt());
         }
+
+        AbstractFruitSource fruitSource = new BasketFruitSource();
+        AbstractFruit abstractFruit = fruitSource.getFruitByName("banana");
     }
 }
