@@ -1,0 +1,2 @@
+- implement the fruit squeezer for the squeezable fruits (Apples and Pomegranates)
+- create a generic FruitProcessor, implement it for Apples and Bananas
