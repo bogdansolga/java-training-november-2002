@@ -1,2 +1,3 @@
-- implement the fruit squeezer for the squeezable fruits (Apples and Pomegranates)
-- create a generic FruitProcessor, implement it for Apples and Bananas
+- implement the FruitSqueezer for the squeezable fruits (Apples and Pomegranates)
+- create a generic FruitProcessor (interface or abstract class), implement it for Apples and Bananas
+- create a GenericsExercisesMain, instantiate the classes and use them
