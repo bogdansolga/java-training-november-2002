@@ -5,6 +5,18 @@ import java.util.Arrays;
 public class ArraysMain {
 
     public static void main(String[] args) {
+        //basicExamples();
+
+        arrayLengthExceptionExample();
+    }
+
+    private static void arrayLengthExceptionExample() {
+        int[] array = new int[3];
+        array[2] = 25;
+        System.out.println(array[array.length - 1]); // accessing the last element: the array length - 1
+    }
+
+    private static void basicExamples() {
         Integer[] intValues = new Integer[5];
         //intValues[0] = 10;
         //intValues[3] = 15;

@@ -2,6 +2,7 @@ package com.training.d04.s04;
 
 import com.training.d03.s01.model.Apple;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
@@ -19,7 +20,15 @@ public class CollectionsMain {
 
         //setExample();
 
-        mapExample();
+        //mapExample();
+
+        finalCollectionsUsage();
+    }
+
+    private static void finalCollectionsUsage() {
+        final List<String> strings = new ArrayList<>();
+        //strings = new ArrayList<>(); // not allowed, as the 'strings' object is final (cannot be re-associated)
+        strings.add("something"); // the collection values (/ items) are _not_ final - they can be updated/added/removed
     }
 
     private static void mapExample() {
